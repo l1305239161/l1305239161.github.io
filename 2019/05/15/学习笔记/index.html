@@ -5,15 +5,19 @@
   
 
   
-  <title>Hexo</title>
+  <title>学习笔记 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="git push -u origin master html部分# 定位总结 #:定位position 要设置left top或者其他方向 # 超链接总结 #: 超链接必须转换成块元素才能对其中的字体设置宽高颜色首行缩进居中等等  可以直接对超链接进行定位 但是时常会出现错误  尽量不要直接对超链接定位 浮动等等 不然好多会出现重叠现象 尽量加  从ul开始定位 然后li浮动 a转换block设置">
+<meta property="og:type" content="article">
+<meta property="og:title" content="学习笔记">
+<meta property="og:url" content="http://yoursite.com/2019/05/15/学习笔记/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="git push -u origin master html部分# 定位总结 #:定位position 要设置left top或者其他方向 # 超链接总结 #: 超链接必须转换成块元素才能对其中的字体设置宽高颜色首行缩进居中等等  可以直接对超链接进行定位 但是时常会出现错误  尽量不要直接对超链接定位 浮动等等 不然好多会出现重叠现象 尽量加  从ul开始定位 然后li浮动 a转换block设置">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-05-15T11:41:24.233Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="学习笔记">
+<meta name="twitter:description" content="git push -u origin master html部分# 定位总结 #:定位position 要设置left top或者其他方向 # 超链接总结 #: 超链接必须转换成块元素才能对其中的字体设置宽高颜色首行缩进居中等等  可以直接对超链接进行定位 但是时常会出现错误  尽量不要直接对超链接定位 浮动等等 不然好多会出现重叠现象 尽量加  从ul开始定位 然后li浮动 a转换block设置">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,9 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-学习笔记" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-学习笔记" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/05/15/学习笔记/" class="article-date">
   <time datetime="2019-05-15T11:41:01.000Z" itemprop="datePublished">2019-05-15</time>
@@ -75,8 +77,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/05/15/学习笔记/">学习笔记</a>
+    <h1 class="article-title" itemprop="name">
+      学习笔记
     </h1>
   
 
@@ -628,229 +630,19 @@ bgOrigin.onchange = function () {
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-github发布步骤" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/05/15/github发布步骤/" class="article-date">
-  <time datetime="2019-05-15T11:27:58.000Z" itemprop="datePublished">2019-05-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/05/15/github发布步骤/">github发布步骤</a>
-    </h1>
+    <a href="/2019/05/15/github发布步骤/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">github发布步骤</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="结合github与hexo搭建个人博客"><a href="#结合github与hexo搭建个人博客" class="headerlink" title="结合github与hexo搭建个人博客"></a>结合github与hexo搭建个人博客</h2><h3 id="本地配置"><a href="#本地配置" class="headerlink" title="本地配置"></a>本地配置</h3><ul>
-<li>在github创建仓库 名称为 username.github.io</li>
-<li>在本地安装hexo-cli<ul>
-<li>npm install hexo-cli -g  </li>
-<li>在文件夹 hexo init blog(文件夹名称自己写,不能用中文)</li>
-<li>进入blog文件 hexo server (在本地发布预览)</li>
-<li>访问 localhost:4000 即可预览</li>
-</ul>
-</li>
-<li>在blog文件cmd 输入 hexo new xxxx<ul>
-<li>在项目的source&gt;_posts目录 会创建xxxx.md文件</li>
-<li>在这个md文件写markdown笔记即可</li>
-</ul>
-</li>
-</ul>
-<h3 id="发布到github"><a href="#发布到github" class="headerlink" title="发布到github"></a>发布到github</h3><ul>
-<li>添加插件 在文件夹 npm install hexo-deployer-git –save</li>
-<li>修改_config.yml配置文件</li>
-</ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">  deploy:</span><br><span class="line">type: git</span><br><span class="line">repo: &lt;repository url&gt; #https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io</span><br></pre></td></tr></table></figure>
-<ul>
-<li>把xxx.md文件转换为html  hexo g </li>
-<li>把本地的静态文件发布到 github   deploy</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/15/github发布步骤/" data-id="cjvp5mzs20002u0qljb0kf32k" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-github博客" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/05/15/github博客/" class="article-date">
-  <time datetime="2019-05-15T09:19:28.000Z" itemprop="datePublished">2019-05-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/05/15/github博客/">github博客</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="gitignore"><a href="#gitignore" class="headerlink" title=".gitignore"></a>.gitignore</h2><blockquote>
-<p>配置忽略文件,可用配置哪些文件不需要git托管.</p>
-</blockquote>
-<h2 id="初始化一个git仓库"><a href="#初始化一个git仓库" class="headerlink" title="初始化一个git仓库"></a>初始化一个git仓库</h2><ul>
-<li>git init</li>
-<li>git status 查看状态<ul>
-<li>红色的为工作区 未暂存状态</li>
-</ul>
-</li>
-<li>git add .  添加到暂存区</li>
-<li>git checkout a.html  把文件从暂存区还原到工作区</li>
-<li>git commit -m’xxx’ 提交到存储区 (就不怕代码覆盖,每一次提交都会有hash记录)<ul>
-<li>如果没有写 -m 会进入vim编辑器,输入esc   :q 退出</li>
-</ul>
-</li>
-<li>git log 查看提交到存储区的日志<ul>
-<li>hash值 每次都不同</li>
-<li>HEAD 指向当前的提交记录</li>
-</ul>
-</li>
-</ul>
-<h2 id="分支功能"><a href="#分支功能" class="headerlink" title="分支功能"></a>分支功能</h2><blockquote>
-<p>git 提交默认是主分支 master</p>
-</blockquote>
-<ul>
-<li>git branch xx 创建xx分支</li>
-<li>git branch   查看分支状态 (带*的为当前所在分支)</li>
-<li>git checkout xx 切换到xx分支</li>
-<li>git merge xx 合并xx分支到当前主分支(合并之前必须先commit)</li>
-<li>git branch -d xx 删除xx分支 </li>
-</ul>
-<h2 id="github"><a href="#github" class="headerlink" title="github"></a>github</h2><ul>
-<li>git remote add origin xxxx  (远程创建仓库不选择readme.md会出现提示,只需要创建一次,建立本地和github远程仓库的连接)</li>
-<li>git push -u master (只需要第一次 -u master)</li>
-<li>git  add  .   git commit -m’xxx’  git push  (push之前 必须先commit)<ul>
-<li>git push 被拒绝,一般是由于多人修改了同一个仓库同文件代码所致,通过pull 拉取最新代码手动合并后提交即可.</li>
-</ul>
-</li>
-<li>git clone xxx  在新本地clone远程仓库 </li>
-<li>git pull 可用获取远程仓库最新代码 并合并到本地(如果出现冲突, 需要手动合并)</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/15/github博客/" data-id="cjvp5mzs00001u0qlnnhg5yc4" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-text1" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/05/15/text1/" class="article-date">
-  <time datetime="2019-05-15T09:15:27.000Z" itemprop="datePublished">2019-05-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/05/15/text1/">hexo搭建</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="hexo搭建博客74"><a href="#hexo搭建博客74" class="headerlink" title="hexo搭建博客74"></a>hexo搭建博客74</h2><h3 id="搭建步骤"><a href="#搭建步骤" class="headerlink" title="搭建步骤"></a>搭建步骤</h3>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/15/text1/" data-id="cjvp5mzs40003u0qli5tsfgq6" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/05/15/hello-world/" class="article-date">
-  <time datetime="2019-05-15T09:05:44.369Z" itemprop="datePublished">2019-05-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/05/15/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/15/hello-world/" data-id="cjvp5mzrv0000u0qllhe5sexm" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
